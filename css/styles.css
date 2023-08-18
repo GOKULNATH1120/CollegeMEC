@@ -12,7 +12,7 @@ body, ul {
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 300px;
     justify-content: last baseline;
 }
 
@@ -77,17 +77,7 @@ body, ul {
     color: black;
 }
 
-/* Footer styles */
-.footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: navy;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    height: 30px;
-}
+
 
 
 /* Other styles for your content section can be added here */
@@ -95,14 +85,14 @@ body, ul {
     
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 800px;
+        align-items: center;       
+        width: 500px;
     
 }        
 
 /* Style the video */
 video {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
 }    
 
@@ -110,29 +100,40 @@ video {
 /* Register form */
 
 .form {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-    background-color: #f4f4f4;
+    position: absolute;
+    right: 40px; /* Adjust as needed */
+    top: 80%; /* Vertically center the form */
+    transform: translateY(-50%);
+    padding: 0px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    
 }
 
 .admission-form {
-    background-color: white;
+    flex: 1;
     padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
-}
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}    
 
 .admission-form h2 {
-    margin-bottom: 15px;
+     margin-top: 10;
+     
 }
-
 .admission-form label {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
+
 }
 
 .admission-form select, .admission-form input[type="text"],
@@ -144,7 +145,7 @@ video {
     border-radius: 4px;
 }
 
-.submit-button {
+.navy-button {
     background-color: navy;
     color: white;
     border: none;
@@ -232,6 +233,7 @@ body, h2, p {
     background-color: navy;
     display: inline-block;
     color: white;
+    width: 100%;
 }
 
 .microsoft-paragraph {
@@ -240,9 +242,9 @@ body, h2, p {
 }
 
 /* images */
-.image-container {
+.image-container-a {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: #f4f4f4;
@@ -363,7 +365,8 @@ body, h2, p {
 h3 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: navy;
+    color: white;
+    background-color: navy;
 }
 
 .image img {
@@ -377,8 +380,9 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     background-color: #f4f4f4;
+    
 }
 
 .headl {
@@ -430,55 +434,284 @@ p {
 
 /*location*/
 
+.container-l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+
+}
+
+.location {
+    text-align: center;
+}
+
+/*contact us*/
 /* Reset some default styles */
-/* Reset some default styles */
+b/* Reset some default styles */
 body, html {
     margin: 0;
     padding: 0;
 }
 
-/* Reset some default styles */
-/* Reset some default styles */
-body, html {
-    margin: 0;
-    padding: 0;
+.section {
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    line-height: 1.5;
 }
 
-.wrapped-header {
-    display: inline-block;
-    background-color: #3498db;
+.section h2 {
+    margin-top: 0;
+}
+
+
+
+/* Adjust styles for different screen sizes */
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+        float: none;
+    }
+}
+
+
+
+/*marquee*/
+.container-5 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 50vh;
+    
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    height: 300px;
+}
+
+.section-header {
+    background-color: navy;
     color: white;
     padding: 10px;
-    border-radius: 5px;
     text-align: center;
-    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
-/* Apply the hover effect by default */
-.wrapped-header:hover {
-    background-color: #ff5733;
+.bullet-list {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    height: 300px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 24px;
+.bullet-list ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 15px;
 }
 
-/* Media Query for Small Screens */
+/* Adjust styles for smaller screens */
 @media (max-width: 768px) {
-    .wrapped-header {
-        padding: 20px;
+    .container {
+        flex-direction: column;
     }
-    
-    h1 {
+}
+
+/*picture wiith headtags*/
+
+.container-p {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 400px;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/*you tube videos*/
+   
+.header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: left; /* Align horizontally */
+    height: 10px; /* Set the desired height */
+}
+
+.header-text {
+    margin: 0; 
+    font-size: 24px;
+}    
+
+.box-section {
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}   
+
+/* Iframe style */
+iframe {
+    max-width: 100%;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .header {
         font-size: 18px;
     }
 }
 
 
+/*home screen*/
 
 
 
+.rectangle-section {
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.square-section {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.square-header {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .rectangle-section {
+        flex-direction: column;
+    }
+}
 
 
+.rectangle-section-1 {
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.square-section-1 {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 8px silver;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.square-header-1 {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+
+.quick-links, .downloads {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.stay-connected {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stay-connected img {
+    max-width: 30px;
+    margin: 0 5px;
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .rectangle-section-1 {
+        flex-direction: column;
+    }
+}
+
+
+/*home screen footer*/
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
