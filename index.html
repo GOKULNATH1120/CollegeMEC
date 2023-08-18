@@ -145,52 +145,87 @@
         </nav>
     </header>
     <!--video-->
-    <section class="content">
-        <div class="video-container">
+    <div class="container">
+        <section class="video-section">
             <video controls>
-                <source src="images\MecSlider.webm" type="video/webm">
+                <source src="images\MecSlider.webm" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
-        </div>  
-        <!-- Register Form -->
-        <div class="form">
-            <form class="admission-form">
-                <h2>Admission Form</h2>
+        </section>
+        <section class="admission-form">
+            <h2>Admission Form</h2>
+            <form>
                 <label for="name">Enter Name:</label>
                 <input type="text" id="name" name="name" required>
-    
-                <label for="father-name">Enter Father's Name:</label>
-                <input type="text" id="father-name" name="father-name" required>
-    
+
+                <label for="fatherName">Enter Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+
                 <label for="course">Select Course:</label>
-                <select id="course" name="course" required>
+                <select id="course" name="course">
                     <option value="course1">Course 1</option>
                     <option value="course2">Course 2</option>
-                    <option value="course3">Course 3</option>
+                    <!-- Add more options here -->
                 </select>
-    
+
                 <label for="email">Enter Email:</label>
                 <input type="email" id="email" name="email" required>
-    
+
                 <label for="state">Select State:</label>
-                <select id="state" name="state" required>
+                <select id="state" name="state">
                     <option value="state1">State 1</option>
                     <option value="state2">State 2</option>
-                    <option value="state3">State 3</option>
+                    <!-- Add more options here -->
                 </select>
-    
-                <label for="mobile">Mobile Number:</label>
+
+                <label for="mobile">Enter Mobile Number:</label>
                 <input type="tel" id="mobile" name="mobile" required>
-    
-                <button class="submit-button" type="submit">Submit</button>
+
+                <button type="submit" class="navy-button">Submit</button>
+
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox" name="agree">
+                    I agree to receive admission related messages.
+                </label>
+
+                <p>Login or Register</p>
             </form>
-            <div class="login-register">
-                <input type="checkbox" id="login-register">
-                <label for="login-register">Login or Register</label>
+        </section>
+    </div>
+    <div class="container-5">
+        <section class="left-section">
+            <header class="section-header">Announcements</header>
+            <div class="bullet-list">
+                <marquee direction="up" behavior="scroll" scrollamount="2">
+                    <ul>
+                        <li>Academic Schedule - Odd Semester (UG, PG-Except 3rd Semester) Jul-23 to Nov-23</li>
+                           <li> MCA – Academic Schedule for 3rd Semester (Aug-23 to Dec-23)</li>
+                            <li>Commencement of PG – Practical, Theory Examinations Schedule (Apr/May-23)</li>
+                            <li>Commencement of UG, MBA – Practical, Theory Examinations Schedule (Apr/May-23)</li>
+                            <li>Commencement of Even Semester Classes – UG(II Sem), PG(IV SEM) – May/Aug-23</li>
+                            <li>Polytechnic Project Expo-23</li>
+                            <li>Skillsort – Skillathon’23 on 27.04.2023</li>
+                            <li>Career guidance for Higher Education – Conquer’23 - Online Registration Form</li>
+                            <li>Revised UG(I-Sem), PG(II-Sem) Nov/DEC-22 Practical Examinations</li>
+                            <li>Admission Online Application Form</li>
+                    </ul>
+                </marquee>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <p>&copy; 2023 Mailam Engineering College.</p>
-    </footer>
+        </section>
+        <section class="right-section">
+            <header class="section-header">Right Section Header</header>
+            <div class="bullet-list">
+                <marquee direction="up" behavior="scroll" scrollamount="2">
+                    <ul>
+                        <li>The Department of Information Technology organizes online Technical Seminar Program titled "Introduction to Deep learning" special talk by Dr.M.Vimaladevi, Assistant Professor, Department of Computational Intelligence, SRM Institute of Science and Technology, Chennai, for our Second year students on 13.5.2023 -    Invitation   Broucher</li>
+                        <li>The Department of Information Technology organizes online Technical Seminar Program titled "Introduction to AI and ML Techniques" special talk by Dr.K.Vijayaprabakaran, Assistant Professor, VIT University Chennai, for our Third year students on 13.5.2023 -    Invitation   Broucher</li>
+                        <li>Department of Civil Engineering, Organizes a Seminar, Entitled, Concrete Saves the World on token of Silver Jubilee celebration, Special Talk by Dr.M.Purushothaman</li>
+                        <li>Department of Civil Engineering, Organizes a Seminar, Entitled, Concrete Saves the World on token of Silver Jubilee celebration, Special Talk by Dr.M.Purushothaman , Associate professor , Department of Civil engineering , Govt college of Engineering, Bodinayakanur, Theni District. on Date :12.5.2023, Time:2 to 3 pm - Google meet(online)    Invitation   Broucher</li>
+                        <li>Department of Civil Engineering, Organizes a Alumni Talk, Entitled, 2D to BIM story on token of Silver Jubilee celebration, Special Talk by Mr. S. Dhivakar, Senior Application Engineer-Technical, USAM Technology solution (Pvt) Ltd, Chennai on Date :1.4.2023 - Google meet(online)    Invitation  Broucher</li>
+                    </ul>
+                </marquee>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
