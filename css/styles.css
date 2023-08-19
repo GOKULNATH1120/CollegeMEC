@@ -978,3 +978,60 @@ body, html {
     height: auto;
     
 }
+
+
+/*r&d cell*/
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*r and d cell*/
+.expert-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.header-row th {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+
+.expert-table td, .expert-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.expert-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}    
