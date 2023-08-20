@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\styles.css">
-    <title>Horizontal Background Header</title>
+    <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+    <title>Mailam Engineering College</title>
 </head>
 <body>
     <p id="breadcrumbs" class="yoast"><span><span><a href="index.html">Home</a> » <span class="breadcrumb_last" aria-current="page">Admission</span></span></span></p>
-    <p>
-        <a href="your-pdf-file.pdf" target="_blank">Open PDF Content</a>
-    </p>
+    <header class="heddy-2">
+        <h1>Engineering Admission</h1>
+    </header>
+    <section class="admission-section-5">
+        <div class="image-container-5">
+            <img src="images\gallery pic\mectop.webp" alt="Image">
+        </div>
+        <div class="form-container-5">
+            <h2>Admission Form</h2>
+            <form>
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="fatherName">Enter Father Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+                
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="course1">EC</option>
+                    <option value="course2">IT</option>
+                   
+                </select>
+                
+                <label for="email">Enter Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="location">Enter Location:</label>
+                <input type="text" id="location" name="location" required>
+                
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <div class="col_5"> 
+        <p>© 2023 Mailam Engineering College,. </p>
+    </div>
 </body>
 </html>    
